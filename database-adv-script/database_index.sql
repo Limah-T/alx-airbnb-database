@@ -15,11 +15,11 @@ CREATE INDEX idx_booking_property_id ON booking(property_id);
 CREATE INDEX idx_property_user_id ON property(user_id);
 
 /*Measure the query performance before and after adding indexes using EXPLAIN or ANALYZE.*/
-EXPLAIN SELECT * 
+EXPLAIN ANALYZE SELECT * 
     FROM booking
     INNER JOIN user ON booking.user_id=user.user_id;
 
-EXPLAIN SELECT *
+EXPLAIN ANALYZE SELECT *
 FROM user
 WHERE (
     SELECT COUNT(*)
@@ -27,7 +27,7 @@ WHERE (
     WHERE booking.user_id=user.user_id
     ) > 3;
 
-EXPLAIN SELECT * 
+EXPLAIN ANALYZE SELECT * 
 FROM property 
 WHERE(
         SELECT AVG(review.rating) 
