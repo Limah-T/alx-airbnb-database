@@ -1,6 +1,6 @@
 /*Write an initial query that retrieves all bookings along with the user details, property details, and payment details */
-
-SELECT 
+"WHERE", "AND"
+EXPLAIN SELECT 
         b.booking_id,
         u.user_id, 
         u.first_name, 

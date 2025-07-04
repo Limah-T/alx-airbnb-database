@@ -1,4 +1,5 @@
 Write an initial query that retrieves all bookings along with the user details, property details, and payment details
+"WHERE", "AND"
 
 SELECT u.user_id, u.first_name, u.last_name, p.name, p.location, pay.amount, pay.method
 FROM user AS u
