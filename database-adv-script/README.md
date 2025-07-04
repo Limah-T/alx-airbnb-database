@@ -11,5 +11,6 @@ Query tables in subquery format using the correlated and non-correlated
 ## Identify and create indexes to improve query performance.
 Using INDEX for reasarching data faster to optimize the flow, create INDEX for each frequently used columns from the user, booking, and property table.
 
+## Refactor complex queries to improve performance.
 
 
