@@ -14,3 +14,4 @@ ORDER BY properties.name;
 SELECT *
 FROM user
 FULL OUTER JOIN booking ON user.user_id=booking.user_id;
+
